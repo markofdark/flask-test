@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+
+{% block container %}
+    <div class="top-pad">
+        {% for product in products.items %}
+            <div class="top-pad offset-1 col-sm-10">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2>
+                            <a class="text-decoration-none" href="{{ url_for('catalog.product', id=product.id) }}">
+                                {{ product.name }}
+                            </a>
+                            <small>$ {{ product.price }}</small>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% if products.has_prev %}
+            <a href="{{ url_for(request.endpoint, page=products.prev_num) }}">{{ "<< Previous page" }}</a>
+        {% else %}
+{#            {{ "<< Previous page" }}#}
+        {% endif %}
+        {% if products.has_next %}
+            <a href="{{ url_for(request.endpoint, page=products.next_num) }}">{{ "Next page >>" }}</a>
+        {% else %}
+{#            {{ "Next page >>" }}#}
+        {% endif %}
+    </div>
+{% endblock %}

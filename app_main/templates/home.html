@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block container %}
+    <h1>{{ _('Welcome to the Catalog Home') }}</h1>
+    <a href="{{ url_for('catalog.products') }}"
+       class="text-decoration-none" id="catalog_link">
+        {{ _('Click here to see the catalog') }}
+    </a><br>
+    <a href="{{ url_for('catalog.categories') }}"
+       class="text-decoration-none" id="category_link">
+        {{ _('Click to see the categories') }}
+    </a><br>
+    <a href="{{ url_for('catalog.create_product') }}"
+       class="text-decoration-none">
+        {{ _('Create product') }}
+    </a><br>
+    <a href="{{ url_for('catalog.create_category') }}"
+       class="text-decoration-none">
+        {{ _('Create category') }}
+    </a>
+{% endblock %}

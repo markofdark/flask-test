@@ -1,0 +1,42 @@
+{% extends 'home.html' %}
+
+{% block container %}
+    <div class="top-pad">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active show" href="#simple-form" data-bs-toggle="tab">Old Style Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#social-logins" data-bs-toggle="tab">Social Logins</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ldap-form" data-bs-toggle="tab">LDAP Login</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active show" id="simple-form">
+                <br/>
+                <form method="POST" action="{{ url_for('auth.login') }}" role="form">
+                    {{ form.csrf_token }}
+                    <div class="mb-3">{{ form.username.label }}: {{ form.username() }}</div>
+                    <div class="mb-3">{{ form.password.label }}: {{ form.password() }}</div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="tab-pane" id="social-logins">
+                <a href="{{ url_for('auth.google_login', next=url_for('auth.home')) }}">Login via Google</a>
+                <br/>
+                <!-- Add other social login options here -->
+            </div>
+            <div class="tab-pane" id="ldap-form">
+                <br/>
+                <form method="POST" action="{{ url_for('auth.ldap_login') }}" role="form">
+                    {{ form.csrf_token }}
+                    <div class="mb-3">{{ form.username.label }}: {{ form.username() }}</div>
+                    <div class="mb-3">{{ form.password.label }}: {{ form.password() }}</div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

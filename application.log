@@ -1,0 +1,288 @@
+2023-11-29 18:58:26,173 ERROR: Exception on /en/products [GET][in C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py:825
+Traceback (most recent call last):
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask_restful\__init__.py", line 298, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py", line 58, in products
+    products = Product.query.paginate(pag=page, per_page=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() got an unexpected keyword argument 'pag'
+2023-11-29 18:58:59,784 ERROR: Exception on /en/products [GET][in C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py:825
+Traceback (most recent call last):
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask_restful\__init__.py", line 298, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py", line 58, in products
+    products = Product.query.paginate(pag=page, per_page=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() got an unexpected keyword argument 'pag'
+2023-11-29 19:00:48,596 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:41
+2023-11-29 19:00:49,626 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:41
+2023-11-29 21:46:34,588 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:46:35,661 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:46:35,725 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:46:36,456 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:46:59,531 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:47:06,530 ERROR: Exception on /google-login [GET][in C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py:825
+Traceback (most recent call last):
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask_restful\__init__.py", line 298, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\app_main\auth\views.py", line 108, in google_login
+    user = User.query.filter_by(username=resp.json()['email']).first()
+                                         ~~~~~~~~~~~^^^^^^^^^
+KeyError: 'email'
+2023-11-29 21:48:37,159 ERROR: Exception on /ldap-login [POST][in C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py:825
+Traceback (most recent call last):
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask_restful\__init__.py", line 298, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\app_main\auth\views.py", line 132, in ldap_login
+    conn = get_ldap_connection(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\app_main\__init__.py", line 87, in get_ldap_connection
+    return conn.bind()
+           ^^^^^^^^^^^
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\ldap3\core\connection.py", line 589, in bind
+    self.open(read_server_info=False)
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\ldap3\strategy\sync.py", line 57, in open
+    BaseStrategy.open(self, reset_usage, read_server_info)
+  File "C:\Users\Master\PycharmProjects\flaskProject\venv\Lib\site-packages\ldap3\strategy\base.py", line 150, in open
+    raise LDAPSocketOpenError('unable to open socket', exception_history)
+ldap3.core.exceptions.LDAPSocketOpenError: ('unable to open socket', [(LDAPSocketOpenError('socket connection error while opening: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'), ('::1', 389, 0, 0)), (LDAPSocketOpenError('socket connection error while opening: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'), ('127.0.0.1', 389))])
+2023-11-29 21:48:38,268 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:48:39,731 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:48:45,474 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:48:52,396 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:49:24,062 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:50:18,760 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-11-29 21:50:21,103 INFO: Home page with total of 1 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:39
+2023-12-01 21:45:28,344 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:45:28,344 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:49:46,306 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:49:46,306 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:49:52,067 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:49:52,067 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:01,982 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:01,982 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:01,982 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:01,982 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:43,675 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:43,675 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:43,675 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:52:43,675 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:53:40,099 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:53:40,099 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:53:40,099 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:54:09,057 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-01 21:54:09,057 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 17:56:23,091 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 17:56:23,091 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:16:39,771 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:16:39,771 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:25:38,313 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:25:38,313 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:39:51,323 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:39:51,323 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:46:40,331 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:46:40,331 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:46:40,331 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 18:46:40,331 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:40
+2023-12-04 20:18:00,471 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:00,471 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,544 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,544 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,544 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,544 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,597 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,597 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,597 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,597 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,597 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:18:44,597 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,809 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,809 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,809 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,809 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,896 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,896 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,896 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,896 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,896 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:24:22,896 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:25:00,934 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 20:25:00,934 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:43
+2023-12-04 22:09:17,009 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,009 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,009 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,009 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,125 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,125 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,125 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,125 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,125 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:09:17,125 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,114 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,114 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,114 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,114 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,233 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,233 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,233 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,233 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,233 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:11:55,233 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:34,927 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:34,927 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:34,927 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:34,927 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:35,046 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:35,046 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:35,046 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:35,046 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:35,046 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:15:35,046 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,228 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,228 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,228 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,228 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,341 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,341 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,341 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,341 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,341 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:17:44,341 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,472 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,472 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,472 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,472 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,585 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,585 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,585 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,585 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,585 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:18:41,585 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,110 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,110 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,110 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,110 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,229 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,229 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,229 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,229 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,229 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:19:34,229 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,255 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,255 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,255 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,255 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,370 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,370 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,370 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,370 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,370 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:24:48,370 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,586 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,586 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,586 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,586 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,703 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,703 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,703 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,703 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,703 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:25:21,703 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,379 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,379 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,379 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,379 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,501 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,501 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,501 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,501 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,501 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:27:23,501 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,105 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,105 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,105 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,105 INFO: Home page with total of 0 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,217 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,217 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,217 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,217 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,217 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:28:36,217 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:38:09,323 INFO: Home page with total of 3 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:38:11,809 INFO: Home page with total of 3 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:38:48,662 INFO: Home page with total of 3 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:39:03,538 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:39:03,648 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:39:03,711 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:45:04,672 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:45:05,558 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:45:07,170 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:45:07,244 ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.[in C:\Users\Master\PycharmProjects\flaskProject\app_main\__init__.py:34
+2023-12-04 22:45:08,346 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:45:08,424 ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.[in C:\Users\Master\PycharmProjects\flaskProject\app_main\__init__.py:34
+2023-12-04 22:45:12,097 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:46:58,093 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:46:58,686 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:47:01,989 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:48:07,778 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:48:08,622 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:48:09,708 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:48:09,806 ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.[in C:\Users\Master\PycharmProjects\flaskProject\app_main\__init__.py:34
+2023-12-04 22:48:19,340 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:48:19,860 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:52:50,319 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:53:33,816 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:53:34,699 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44
+2023-12-04 22:53:39,450 INFO: Home page with total of 2 products[in C:\Users\Master\PycharmProjects\flaskProject\app_main\catalog\views.py:44

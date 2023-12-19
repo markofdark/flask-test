@@ -1,0 +1,60 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-11-24 23:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: app_main/catalog/models.py:78 app_main/catalog/models.py:105
+msgid "Name"
+msgstr ""
+
+#: app_main/catalog/models.py:79
+msgid "Price"
+msgstr ""
+
+#: app_main/catalog/models.py:82
+msgid "Category"
+msgstr ""
+
+#: app_main/catalog/models.py:85
+msgid "Product Image"
+msgstr ""
+
+#: app_main/catalog/views.py:62
+#, python-format
+msgid "The product %(name)s has been created"
+msgstr ""
+
+#: app_main/templates/home.html:4
+msgid "Welcome to the Catalog Home"
+msgstr ""
+
+#: app_main/templates/home.html:7
+msgid "Click here to see the catalog"
+msgstr ""
+
+#: app_main/templates/home.html:11
+msgid "Click to see the categories"
+msgstr ""
+
+#: app_main/templates/home.html:15
+msgid "Create product"
+msgstr ""
+
+#: app_main/templates/home.html:19
+msgid "Create category"
+msgstr ""
+

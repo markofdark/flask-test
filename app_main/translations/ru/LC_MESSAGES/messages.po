@@ -1,0 +1,63 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-11-24 23:46+0300\n"
+"PO-Revision-Date: 2023-11-24 22:52+0300\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: app_main/catalog/models.py:78 app_main/catalog/models.py:105
+msgid "Name"
+msgstr "Название"
+
+#: app_main/catalog/models.py:79
+msgid "Price"
+msgstr "Цена"
+
+#: app_main/catalog/models.py:82
+#, fuzzy
+msgid "Category"
+msgstr "Категория"
+
+#: app_main/catalog/models.py:85
+msgid "Product Image"
+msgstr "Изображение продукта"
+
+#: app_main/catalog/views.py:62
+#, python-format
+msgid "The product %(name)s has been created"
+msgstr "Продукт %(name)s добавлен"
+
+#: app_main/templates/home.html:4
+msgid "Welcome to the Catalog Home"
+msgstr "Добро пожаловать на главную страницу каталога"
+
+#: app_main/templates/home.html:7
+msgid "Click here to see the catalog"
+msgstr "Нажмите здесь, чтобы посмотреть каталог"
+
+#: app_main/templates/home.html:11
+msgid "Click to see the categories"
+msgstr "Нажмите, чтобы посмотреть категории"
+
+#: app_main/templates/home.html:15
+msgid "Create product"
+msgstr "Создать товар"
+
+#: app_main/templates/home.html:19
+msgid "Create category"
+msgstr "Создать категорию"
+
